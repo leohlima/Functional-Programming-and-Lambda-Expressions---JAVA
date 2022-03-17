@@ -20,7 +20,7 @@ public class App {
         //Lambda expression used as "Predicate";
         productList.removeIf(p -> p.getPrice() <= 100);
 
-        //Lambda expression like as "Consumer";
+        //Lambda expression used as "Consumer";
 
         for (Product p : productList){
             System.out.println(p);
