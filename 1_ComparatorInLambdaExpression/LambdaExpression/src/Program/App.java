@@ -12,9 +12,15 @@ public class App {
 
         productList.add(new Product("Tv", 300.0));
         productList.add(new Product("Notebook", 400.0));
-        productList.add(new Product("Tablet", 600.0));
+        productList.add(new Product("Tablet", 90.0));
 
+        //Lambda expression used as "Comparator";
         productList.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
+
+        //Lambda expression used as "Predicate";
+        productList.removeIf(p -> p.getPrice() <= 100);
+
+        //Lambda expression like as "Consumer";
 
         for (Product p : productList){
             System.out.println(p);

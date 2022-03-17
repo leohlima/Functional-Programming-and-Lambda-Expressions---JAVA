@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/1_ComparatorInLambdaExpression.iml" filepath="$PROJECT_DIR$/.idea/1_ComparatorInLambdaExpression.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ComparatorInLambdaExpression/ComparatorInLambdaExpression.iml" filepath="$PROJECT_DIR$/ComparatorInLambdaExpression/ComparatorInLambdaExpression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/1_LambdaExpression.iml" filepath="$PROJECT_DIR$/.idea/1_LambdaExpression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LambdaExpression/LambdaExpression.iml" filepath="$PROJECT_DIR$/LambdaExpression/LambdaExpression.iml" />
     </modules>
   </component>
 </project>
