@@ -10,8 +10,8 @@ public class App {
     public static void main(String[] args) {
         List<Product> productList = new ArrayList<>();
 
-        productList.add(new Product("Tv", 300.0));
-        productList.add(new Product("Notebook", 400.0));
+        productList.add(new Product("Tv", 200.0));
+        productList.add(new Product("Notebook", 300.0));
         productList.add(new Product("Tablet", 90.0));
 
         //Lambda expression used as "Comparator";
