@@ -8,6 +8,8 @@ import java.util.Locale;
 
 public class App {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+
         List<Product> productList = new ArrayList<>();
 
         productList.add(new Product("Tv", 200.0));
@@ -21,10 +23,10 @@ public class App {
         productList.removeIf(p -> p.getPrice() <= 100);
 
         //Lambda expression used as "Consumer";
+        double tenPercent = 1.1;
+        productList.forEach(p -> p.setPrice(p.getPrice() * tenPercent));
 
-        for (Product p : productList){
-            System.out.println(p);
-        }
+        productList.forEach(System.out::println);
 
     }
 }
