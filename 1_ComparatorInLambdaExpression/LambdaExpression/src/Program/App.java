@@ -26,7 +26,11 @@ public class App {
         double tenPercent = 1.1;
         productList.forEach(p -> p.setPrice(p.getPrice() * tenPercent));
 
+        //Lambda expression used as "Function"
+        List<String> namesUpperCase = productList.stream().map(p -> p.getName().toUpperCase()).toList();
+
         productList.forEach(System.out::println);
+        namesUpperCase.forEach(System.out::println);
 
     }
 }
