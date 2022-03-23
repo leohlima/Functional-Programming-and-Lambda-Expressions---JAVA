@@ -3,7 +3,6 @@ package Program;
 import entities.Product;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
@@ -17,17 +16,16 @@ public class App {
         String path = sc.nextLine();
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-
             List<Product> list = new ArrayList<>();
-
+            
             String line = br.readLine();
-            while (line != null){
-                String[] fields  = line.split(",");
+            while (line != null) {
+                String[] fields = line.split(",");
                 list.add(new Product(fields[0], Double.parseDouble(fields[1])));
                 line = br.readLine();
             }
 
-            double avg = list.stream().map(p -> p.getPrice()).reduce(0.0, (x ,y) -> x + y) / list.size();
+            double avg = list.stream().map(p -> p.getPrice()).reduce(0.0, (x, y) -> x + y) / list.size();
             System.out.println("Average price: " + String.format("%.2f", avg));
 
             Comparator<String> comp = (s1, s2) -> s1.toUpperCase().compareTo(s2.toUpperCase());
@@ -39,7 +37,7 @@ public class App {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         sc.close();
     }
 }
