@@ -17,7 +17,7 @@ public class App {
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             List<Product> list = new ArrayList<>();
-            
+
             String line = br.readLine();
             while (line != null) {
                 String[] fields = line.split(",");
