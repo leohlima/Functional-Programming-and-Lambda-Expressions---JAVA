@@ -16,7 +16,6 @@ public class App {
         String path = sc.nextLine();
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-
             List<Employee> list = new ArrayList<>();
 
             String line = br.readLine();
@@ -41,7 +40,6 @@ public class App {
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
-
         sc.close();
     }
 }
